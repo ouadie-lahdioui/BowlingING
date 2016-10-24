@@ -20,15 +20,21 @@ public class Bowling {
     public int getScore() {
         int score = 0;
         for (int i = 0; i < tours.size(); i++) {
-            if(tours.get(i).isStrike()) {
-                return 10;
-            }else if (tours.get(i).isSpare()) {
+            Tour tour = tours.get(i);
+            if(tour.isStrike() && isFirstOrLast(i, tours.size())) {
+                Tour nextTour = tours.get(i + 1);
+                score += tour.getScore() + nextTour.getScore();
+            }else if (tour.isSpare()) {
 
             }else {
-                score += tours.get(i).getScore();
+                score += tour.getScore();
             }
         }
         return score;
         //return tours.stream().map(Tour::getScore).reduce(0, (a, b) -> a + b);
+    }
+
+    private boolean isFirstOrLast(int position, int size) {
+        return position != 0 && position != size;
     }
 }
