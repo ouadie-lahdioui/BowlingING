@@ -10,31 +10,31 @@ public class BowlingTest {
     Bowling bowling;
 
     @Before
-    public void runBeforeTestMethod(){
+    public void runBeforeTestMethod() {
         bowling = new Bowling();
     }
 
     @Test
     public void should_add_tour() throws BowlingException {
         // Given
-        int tour[][] = {{0, 0}};
+        Tour tour = new Tour(0, 0);
 
         // When
         int tourNumber = bowling.addTour(tour);
 
         // Then
-        Assert.assertEquals(tourNumber, tour.length);
+        Assert.assertEquals(tourNumber, 1);
     }
 
     @Test
     public void should_add_multiple_tours() throws BowlingException {
         // Given
-        int firstTour[][] = {{0, 0}};
-        int secondTour[][] = {{10, 0}};
+        Tour firstTour = new Tour(0, 0);
+        Tour secondTour = new Tour(10, 0);
 
         // When
-        int tourNumber = bowling.addTour(firstTour);
-        tourNumber = bowling.addTour(secondTour);
+        bowling.addTour(firstTour);
+        int tourNumber = bowling.addTour(secondTour);
 
         // Then
         Assert.assertEquals(tourNumber, 2);
@@ -43,18 +43,19 @@ public class BowlingTest {
     @Test(expected = BowlingException.class)
     public void should_add_not_allow_adding_moreThan_10_tours() throws BowlingException {
         // Given
-        int tour1[][] = {{0, 0}};
-        int tour2[][] = {{0, 0}};
-        int tour3[][] = {{0, 0}};
-        int tour4[][] = {{0, 0}};
-        int tour5[][] = {{0, 0}};
-        int tour6[][] = {{0, 0}};
-        int tour7[][] = {{0, 0}};
-        int tour8[][] = {{0, 0}};
-        int tour9[][] = {{0, 0}};
-        int tour10[][] = {{0, 0}};
-        int tour11[][] = {{0, 0}};
+        Tour tour1 = new Tour(0, 0);
+        Tour tour2 = new Tour(0, 0);
+        Tour tour3 = new Tour(0, 0);
+        Tour tour4 = new Tour(0, 0);
+        Tour tour5 = new Tour(0, 0);
+        Tour tour6 = new Tour(0, 0);
+        Tour tour7 = new Tour(0, 0);
+        Tour tour8 = new Tour(0, 0);
+        Tour tour9 = new Tour(0, 0);
+        Tour tour10 = new Tour(0, 0);
+        Tour tour11 = new Tour(0, 0);
 
+        // When
         bowling.addTour(tour1);
         bowling.addTour(tour1);
         bowling.addTour(tour2);
@@ -68,23 +69,22 @@ public class BowlingTest {
         bowling.addTour(tour10);
         bowling.addTour(tour11);
 
-        // When
         // Then
     }
 
     @Test
     public void should_returnZero_whenNoStrike_andNoSpare_andScoreIsZero() throws BowlingException {
         // Given
-        int tour1[][] = {{0, 0}};
-        int tour2[][] = {{0, 0}};
-        int tour3[][] = {{0, 0}};
-        int tour4[][] = {{0, 0}};
-        int tour5[][] = {{0, 0}};
-        int tour6[][] = {{0, 0}};
-        int tour7[][] = {{0, 0}};
-        int tour8[][] = {{0, 0}};
-        int tour9[][] = {{0, 0}};
-        int tour10[][] = {{0, 0}};
+        Tour tour1 = new Tour(0, 0);
+        Tour tour2 = new Tour(0, 0);
+        Tour tour3 = new Tour(0, 0);
+        Tour tour4 = new Tour(0, 0);
+        Tour tour5 = new Tour(0, 0);
+        Tour tour6 = new Tour(0, 0);
+        Tour tour7 = new Tour(0, 0);
+        Tour tour8 = new Tour(0, 0);
+        Tour tour9 = new Tour(0, 0);
+        Tour tour10 = new Tour(0, 0);
 
         bowling.addTour(tour1);
         bowling.addTour(tour1);
@@ -108,18 +108,17 @@ public class BowlingTest {
     @Test
     public void should_return60_whenNoStrike_andNoSpare_andScoreIs60() throws BowlingException {
         // Given
-        int tour1[][] = {{3, 3}};
-        int tour2[][] = {{3, 3}};
-        int tour3[][] = {{3, 3}};
-        int tour4[][] = {{3, 3}};
-        int tour5[][] = {{3, 3}};
-        int tour6[][] = {{3, 3}};
-        int tour7[][] = {{3, 3}};
-        int tour8[][] = {{3, 3}};
-        int tour9[][] = {{3, 3}};
-        int tour10[][] = {{3, 3}};
+        Tour tour1 = new Tour(3, 3);
+        Tour tour2 = new Tour(3, 3);
+        Tour tour3 = new Tour(3, 3);
+        Tour tour4 = new Tour(3, 3);
+        Tour tour5 = new Tour(3, 3);
+        Tour tour6 = new Tour(3, 3);
+        Tour tour7 = new Tour(3, 3);
+        Tour tour8 = new Tour(3, 3);
+        Tour tour9 = new Tour(3, 3);
+        Tour tour10 = new Tour(3, 3);
 
-        bowling.addTour(tour1);
         bowling.addTour(tour1);
         bowling.addTour(tour2);
         bowling.addTour(tour3);

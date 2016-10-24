@@ -6,9 +6,9 @@ import java.util.List;
  */
 public class Bowling {
 
-    List<int[][]> tours = new ArrayList<int[][]>();
+    List<Tour> tours = new ArrayList<>();
 
-    public int addTour(int[][] tour) throws BowlingException {
+    public int addTour(Tour tour) throws BowlingException {
         if (tours.size() > 10) {
             throw new BowlingException();
         }
@@ -17,10 +17,6 @@ public class Bowling {
     }
 
     public int getScore() {
-        int score = 0;
-        for (int i = 0; i > tours.size(); i++) {
-            score += tours.get(i)[i][0] + tours.get(i)[i][1];
-        }
-        return score;
+        return tours.stream().map(Tour::getScore).reduce(0, (a, b) -> a + b);
     }
 }
