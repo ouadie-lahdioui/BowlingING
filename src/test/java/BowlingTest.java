@@ -87,7 +87,6 @@ public class BowlingTest {
         Tour tour10 = new Tour(0, 0);
 
         bowling.addTour(tour1);
-        bowling.addTour(tour1);
         bowling.addTour(tour2);
         bowling.addTour(tour3);
         bowling.addTour(tour4);

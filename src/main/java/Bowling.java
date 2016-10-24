@@ -7,9 +7,10 @@ import java.util.List;
 public class Bowling {
 
     List<Tour> tours = new ArrayList<>();
+    final int MAX_TOUR_NUMBER = 10;
 
     public int addTour(Tour tour) throws BowlingException {
-        if (tours.size() > 10) {
+        if (tours.size() == MAX_TOUR_NUMBER) {
             throw new BowlingException();
         }
         tours.add(tour);
