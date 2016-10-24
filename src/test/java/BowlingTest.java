@@ -135,4 +135,21 @@ public class BowlingTest {
         // Then
         Assert.assertEquals(score, 60);
     }
+
+    @Test
+    public void should_returnScore24_whenOneStrikeIsGiven_andNoSpareIsGiven() throws BowlingException {
+        // Given
+        Tour tour1 = new Tour(10, 0);
+        Tour tour2 = new Tour(5, 2);
+
+        bowling.addTour(tour1);
+        bowling.addTour(tour2);
+
+        // When
+        int score = bowling.getScore();
+
+        // Then
+        Assert.assertEquals(score, 24);
+    }
+
 }

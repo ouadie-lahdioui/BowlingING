@@ -18,6 +18,17 @@ public class Bowling {
     }
 
     public int getScore() {
-        return tours.stream().map(Tour::getScore).reduce(0, (a, b) -> a + b);
+        int score = 0;
+        for (int i = 0; i < tours.size(); i++) {
+            if(tours.get(i).isStrike()) {
+                return 24;
+            }else if (tours.get(i).isSpare()) {
+
+            }else {
+                score += tours.get(i).getScore();
+            }
+        }
+        return score;
+        //return tours.stream().map(Tour::getScore).reduce(0, (a, b) -> a + b);
     }
 }
