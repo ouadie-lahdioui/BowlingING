@@ -181,5 +181,17 @@ public class BowlingTest {
         Assert.assertEquals(score, 100);
     }
 
+    @Test
+    public void should_add_oneSpare_tour() throws BowlingException {
+        // Given
+        Tour tour = new Tour(7, 3);
+        bowling.addTour(tour);
+
+        // When
+        int score = bowling.getScore();
+
+        // Then
+        Assert.assertEquals(score, 10);
+    }
 
 }

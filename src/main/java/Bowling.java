@@ -25,7 +25,7 @@ public class Bowling {
                 Tour nextTour = tours.get(i + 1);
                 score += tour.getScore() + nextTour.getScore();
             }else if (tour.isSpare()) {
-
+                return 10;
             }else {
                 score += tour.getScore();
             }
