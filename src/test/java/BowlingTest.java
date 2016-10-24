@@ -26,4 +26,18 @@ public class BowlingTest {
         Assert.assertEquals(tourNumber, tour.length);
     }
 
+    @Test
+    public void should_add_multiple_tours() {
+        // Given
+        int firstTour[][] = {{0, 0}};
+        int secondTour[][] = {{10, 0}};
+
+        // When
+        int tourNumber = bowling.addTour(firstTour);
+        tourNumber = bowling.addTour(secondTour);
+
+        // Then
+        Assert.assertEquals(tourNumber, 2);
+    }
+
 }
