@@ -73,7 +73,7 @@ public class BowlingTest {
     }
 
     @Test
-    public void should_getScore_whenNoStrike_andNoSpare() throws BowlingException {
+    public void should_returnZero_whenNoStrike_andNoSpare_andScoreIsZero() throws BowlingException {
         // Given
         int tour1[][] = {{0, 0}};
         int tour2[][] = {{0, 0}};
@@ -105,4 +105,36 @@ public class BowlingTest {
         Assert.assertEquals(score, 0);
     }
 
+    @Test
+    public void should_return60_whenNoStrike_andNoSpare_andScoreIs60() throws BowlingException {
+        // Given
+        int tour1[][] = {{3, 3}};
+        int tour2[][] = {{3, 3}};
+        int tour3[][] = {{3, 3}};
+        int tour4[][] = {{3, 3}};
+        int tour5[][] = {{3, 3}};
+        int tour6[][] = {{3, 3}};
+        int tour7[][] = {{3, 3}};
+        int tour8[][] = {{3, 3}};
+        int tour9[][] = {{3, 3}};
+        int tour10[][] = {{3, 3}};
+
+        bowling.addTour(tour1);
+        bowling.addTour(tour1);
+        bowling.addTour(tour2);
+        bowling.addTour(tour3);
+        bowling.addTour(tour4);
+        bowling.addTour(tour5);
+        bowling.addTour(tour6);
+        bowling.addTour(tour7);
+        bowling.addTour(tour8);
+        bowling.addTour(tour9);
+        bowling.addTour(tour10);
+
+        // When
+        int score = bowling.getScore();
+
+        // Then
+        Assert.assertEquals(score, 60);
+    }
 }

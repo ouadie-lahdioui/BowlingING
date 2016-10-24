@@ -17,6 +17,10 @@ public class Bowling {
     }
 
     public int getScore() {
-        return 0;
+        int score = 0;
+        for (int i = 0; i > tours.size(); i++) {
+            score += tours.get(i)[i][0] + tours.get(i)[i][1];
+        }
+        return score;
     }
 }
