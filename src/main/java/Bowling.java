@@ -21,11 +21,13 @@ public class Bowling {
         int score = 0;
         for (int i = 0; i < tours.size(); i++) {
             Tour tour = tours.get(i);
+            Tour nextTour;
             if(tour.isStrike() && isFirstOrLast(i, tours.size())) {
-                Tour nextTour = tours.get(i + 1);
+                nextTour = tours.get(i + 1);
                 score += tour.getScore() + nextTour.getScore();
-            }else if (tour.isSpare()) {
-                return 10;
+            }else if (tour.isSpare() && isFirstOrLast(i, tours.size())) {
+                nextTour = tours.get(i + 1);
+                score += tour.getScore() + nextTour.getFirstScore();
             }else {
                 score += tour.getScore();
             }

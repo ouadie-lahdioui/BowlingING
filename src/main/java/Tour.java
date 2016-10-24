@@ -15,6 +15,10 @@ public class Tour {
         return this.firstScore + this.secondScore;
     }
 
+    public int getFirstScore() {
+        return this.firstScore;
+    }
+
     public boolean isStrike() {
         return this.getScore() == 10 && this.firstScore == 10;
     }
