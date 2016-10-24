@@ -8,7 +8,10 @@ public class Bowling {
 
     List<int[][]> tours = new ArrayList<int[][]>();
 
-    public int addTour(int[][] tour) {
+    public int addTour(int[][] tour) throws BowlingException {
+        if (tours.size() == 10) {
+            throw new BowlingException();
+        }
         tours.add(tour);
         return tours.size();
     }
