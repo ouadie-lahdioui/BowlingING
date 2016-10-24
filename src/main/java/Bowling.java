@@ -20,23 +20,23 @@ public class Bowling {
     public int getScore() {
         int score = 0;
         for (int i = 0; i < tours.size(); i++) {
-            Tour tour = tours.get(i);
+            Tour currentTour = tours.get(i);
             Tour nextTour;
-            if(tour.isStrike() && isFirstOrLast(i, tours.size())) {
+            if(currentTour.isStrike() && isNotFirstOrLast(i, tours.size())) {
                 nextTour = tours.get(i + 1);
-                score += tour.getScore() + nextTour.getScore();
-            }else if (tour.isSpare() && isFirstOrLast(i, tours.size())) {
+                score += currentTour.getScore() + nextTour.getScore();
+            }else if (currentTour.isSpare() && isNotFirstOrLast(i, tours.size())) {
                 nextTour = tours.get(i + 1);
-                score += tour.getScore() + nextTour.getFirstScore();
+                score += currentTour.getScore() + nextTour.getFirstScore();
             }else {
-                score += tour.getScore();
+                score += currentTour.getScore();
             }
         }
         return score;
         //return tours.stream().map(Tour::getScore).reduce(0, (a, b) -> a + b);
     }
 
-    private boolean isFirstOrLast(int position, int size) {
+    private boolean isNotFirstOrLast(int position, int size) {
         return position != 0 && position != size;
     }
 }
