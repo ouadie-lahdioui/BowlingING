@@ -1,4 +1,5 @@
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 
 /**
@@ -6,10 +7,23 @@ import org.junit.Test;
  */
 public class BowlingTest {
 
+    Bowling bowling;
+
+    @Before
+    public void runBeforeTestMethod() {
+        bowling = new Bowling();
+    }
+
     @Test
-    public void testPrintMessage() {
-        System.out.println("Inside testPrintMessage()");
-        Assert.assertEquals("", "");
+    public void should_add_tour() {
+        // Given
+        int tour[][] = {{0, 0}};
+
+        // When
+        int tourNumber = bowling.addTour(tour);
+
+        // Then
+        Assert.assertEquals(tourNumber, tour.length);
     }
 
 }

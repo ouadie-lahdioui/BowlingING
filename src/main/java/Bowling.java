@@ -4,4 +4,7 @@
 public class Bowling {
 
 
+    public int addTour(int[][] tour) {
+        return 1;
+    }
 }
