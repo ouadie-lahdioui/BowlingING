@@ -21,7 +21,7 @@ public class Bowling {
         int score = 0;
         for (int i = 0; i < tours.size(); i++) {
             if(tours.get(i).isStrike()) {
-                return 24;
+                return 10;
             }else if (tours.get(i).isSpare()) {
 
             }else {
