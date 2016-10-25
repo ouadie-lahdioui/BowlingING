@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="58d5b188-62a3-4389-a5e4-1ac4597da244" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/BowlingTest.class" afterPath="$PROJECT_DIR$/target/test-classes/BowlingTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Bowling.java" afterPath="$PROJECT_DIR$/src/main/java/Bowling.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/BowlingException.java" afterPath="$PROJECT_DIR$/src/main/java/BowlingException.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/BowlingTest.java" afterPath="$PROJECT_DIR$/src/test/java/BowlingTest.java" />
     </list>
     <ignored path="BowlingING.iws" />
@@ -33,8 +29,8 @@
       <file leaf-file-name="BowlingTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/BowlingTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="186" column="34" selection-start-line="186" selection-start-column="34" selection-end-line="186" selection-end-column="34" />
+            <state relative-caret-position="210">
+              <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -877,60 +873,60 @@
       <updated>1477299994987</updated>
       <workItem from="1477299996195" duration="3528000" />
       <workItem from="1477303761558" duration="9004000" />
-      <workItem from="1477387886848" duration="1022000" />
+      <workItem from="1477387886848" duration="2362000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BowlingTest - 2016.10.24 at 13h 50m 46s.xml">
+    <history-entry file="BowlingTest - 2016.10.25 at 11h 31m 35s.xml">
       <configuration name="BowlingTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BowlingTest - 2016.10.24 at 13h 50m 52s.xml">
+    <history-entry file="BowlingTest - 2016.10.25 at 11h 34m 42s.xml">
       <configuration name="BowlingTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BowlingTest - 2016.10.24 at 13h 51m 10s.xml">
+    <history-entry file="BowlingTest - 2016.10.25 at 11h 35m 18s.xml">
       <configuration name="BowlingTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BowlingTest - 2016.10.24 at 14h 04m 44s.xml">
+    <history-entry file="BowlingTest - 2016.10.25 at 11h 35m 40s.xml">
       <configuration name="BowlingTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BowlingTest - 2016.10.25 at 10h 59m 38s.xml">
+    <history-entry file="BowlingTest - 2016.10.25 at 11h 35m 55s.xml">
       <configuration name="BowlingTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BowlingTest - 2016.10.25 at 11h 00m 33s.xml">
+    <history-entry file="BowlingTest - 2016.10.25 at 11h 37m 29s.xml">
       <configuration name="BowlingTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BowlingTest - 2016.10.25 at 11h 04m 20s.xml">
+    <history-entry file="BowlingTest - 2016.10.25 at 11h 38m 39s.xml">
       <configuration name="BowlingTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BowlingTest - 2016.10.25 at 11h 05m 51s.xml">
+    <history-entry file="BowlingTest - 2016.10.25 at 11h 39m 16s.xml">
       <configuration name="BowlingTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BowlingTest - 2016.10.25 at 11h 07m 13s.xml">
+    <history-entry file="BowlingTest - 2016.10.25 at 11h 39m 34s.xml">
       <configuration name="BowlingTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BowlingTest_xXx - 2016.10.25 at 10h 31m 53s.xml">
-      <configuration name="BowlingTest.xXx" configurationId="JUnit" />
+    <history-entry file="BowlingTest - 2016.10.25 at 11h 40m 03s.xml">
+      <configuration name="BowlingTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13554000" />
+    <option name="totallyTimeSpent" value="14894000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="813" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="SBT Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32647464" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32614556" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32784638" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41644204" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33064517" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3301887" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1015,6 +1011,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="156">
           <caret line="579" column="22" selection-start-line="579" selection-start-column="22" selection-end-line="579" selection-end-column="22" />
+          <folding>
+            <element signature="e#26957#26958#0" expanded="true" />
+            <element signature="e#27022#27023#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1054,8 +1054,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/BowlingTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="186" column="34" selection-start-line="186" selection-start-column="34" selection-end-line="186" selection-end-column="34" />
+        <state relative-caret-position="210">
+          <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

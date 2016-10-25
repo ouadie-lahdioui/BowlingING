@@ -1,18 +1,50 @@
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
+
+import java.util.Arrays;
+import java.util.Collection;
 
 /**
  * Created by octo-ola on 24/10/2016.
  */
+//@RunWith(Parameterized.class)
 public class BowlingTest {
 
     Bowling bowling;
+    Tour parameterizedTour;
+
+    /*
+    public BowlingTest(Tour tour) {
+        this.parameterizedTour = tour;
+    }
+    */
 
     @Before
     public void runBeforeTestMethod() {
         bowling = new Bowling();
     }
+
+    // Yes : This functoionnality is realy awesome ;)
+    /*
+    @Parameterized.Parameters
+    public static Collection<Tour> params() {
+        return Arrays.asList(
+                new Tour(0,0),
+                new Tour(0,0),
+                new Tour(0,0),
+                new Tour(0,0),
+                new Tour(0,0),
+                new Tour(0,0),
+                new Tour(0,0),
+                new Tour(0,0),
+                new Tour(0,0),
+                new Tour(0,0)
+        );
+    }
+    */
 
     @Test
     public void should_add_tour() throws BowlingException {
