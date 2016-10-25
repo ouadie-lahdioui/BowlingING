@@ -182,6 +182,38 @@ public class BowlingTest {
     }
 
     @Test
+    public void should_returnScore100_whenOneStrikeIsGivenAtFirst_andNoSpareIsGiven() throws BowlingException {
+        // Given
+        Tour tour1 = new Tour(10,0);
+        Tour tour2 = new Tour(4,5);
+        Tour tour3 = new Tour(4,5);
+        Tour tour4 = new Tour(4,5);
+        Tour tour5 = new Tour(4,5);
+        Tour tour6 = new Tour(4, 5);
+        Tour tour7 = new Tour(4,5);
+        Tour tour8 = new Tour(4,5);
+        Tour tour9 = new Tour(4,5);
+        Tour tour10 = new Tour(4,5);
+
+        bowling.addTour(tour1);
+        bowling.addTour(tour2);
+        bowling.addTour(tour3);
+        bowling.addTour(tour4);
+        bowling.addTour(tour5);
+        bowling.addTour(tour6);
+        bowling.addTour(tour7);
+        bowling.addTour(tour8);
+        bowling.addTour(tour9);
+        bowling.addTour(tour10);
+
+        // When
+        int score = bowling.getScore();
+
+        // Then
+        Assert.assertEquals(score, 100);
+    }
+
+    @Test
     public void should_add_oneSpare_tour() throws BowlingException {
         // Given
         Tour tour = new Tour(7, 3);
@@ -225,5 +257,4 @@ public class BowlingTest {
         // Then
         Assert.assertEquals(score, 95);
     }
-
 }
